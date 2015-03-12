@@ -1,0 +1,29 @@
+# Create a new directory and enter it
+function mkd() {
+  mkdir -p "$@" && cd "$@"
+}
+
+# cd into the forefront Finder window.
+cdf() {
+  cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+}
+
+# update git
+gup ()
+{
+  local mymessage="next update";
+
+  # if $1 not zero length
+  if [ ! -z "$1" ]; then
+    mymessage=$1
+  fi
+
+  echo "***git add"
+  git add .
+  echo "***git commit"
+  git commit -m "$mymessage"
+  echo "***git pull"
+  git pull
+  echo "***git push"
+  git push
+}
