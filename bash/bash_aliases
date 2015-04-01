@@ -1,24 +1,27 @@
 # Easier navigation: .., ..., ~
-alias ..="cd .."
-alias cd..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
+alias ..='cd ..'
+alias cd..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ~='cd ~' # `cd` is probably faster to type though
 
 # List only directories
 alias lsd='ls -lh | grep "^d"'
-# list all with details and colours. On Linux use --color instead of -G
-alias lsa='ls -AlhG'
+# list all with details
+# ig colors are not enabled by default and you want it colored, add -G on Os-X or --color on Linux
+alias lsa='ls -Alh'
 
 # IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
-alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias localip='ipconfig getifaddr en1'
+alias ips='ifconfig -a | perl -nle"/(\d+\.\d+\.\d+\.\d+)/ && print $1"'
 
 # update git
-alias gs="git status"
-alias ga="git add"
-alias gc="git commit -m"
-alias gp="git push"
-alias gpull="git pull"
+alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
+alias ga='git add'
+alias gaa='git add .'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gp='git pull'
+alias gps='git push'
