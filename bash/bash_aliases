@@ -6,11 +6,27 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ~='cd ~' # `cd` is probably faster to type though
 
+# open text files with textastic
+alias text='open -a Textastic'
+
 # List only directories
-alias lsd='ls -lh | grep "^d"'
+alias lsd='ls -lhF -G | grep --color=never "^d"'
 # list all with details
 # ig colors are not enabled by default and you want it colored, add -G on Os-X or --color on Linux
-alias lsa='ls -Alh'
+alias lsa='ls -AlhF'
+
+# Always enable colored `grep` output
+# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# quicklook a file
+alias qlf='qlmanage -p "$@" > /dev/null'
+
+# toggle file visibility
+alias saf='defaults write com.apple.finder AppleShowAllFiles ON && killall Finder'
+alias haf='defaults write com.apple.finder AppleShowAllFiles OFF && killall Finder'
 
 # IP addresses
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
