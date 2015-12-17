@@ -64,8 +64,9 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
 
-# Avoid creating .DS_Store files on network volumes
+# Avoid creating .DS_Store files on network volumes and USB drives
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
