@@ -33,12 +33,13 @@ defaults write com.apple.systemuiserver menuExtras -array \
 #################################################
 
 # set tap to click
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
 # set tap to click - even on login
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # enable draglock
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool true
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad DragLock -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad DragLock -int 1
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
