@@ -6,8 +6,8 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ~='cd ~' # `cd` is probably faster to type though
 
-# open text files with textastic
-alias text='open -a Textastic'
+# open text files with atom
+# alias atom='open -a Atom'
 
 # List only directories
 alias lsd='ls -lhF -G | grep --color=never "^d"'
@@ -27,6 +27,10 @@ alias qlf='qlmanage -p "$@" > /dev/null'
 # toggle file visibility
 alias saf='defaults write com.apple.finder AppleShowAllFiles ON && killall Finder'
 alias haf='defaults write com.apple.finder AppleShowAllFiles OFF && killall Finder'
+
+# Clean up LaunchServices to remove duplicates in the “Open With” menu
+alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user"
+
 
 # IP addresses
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
