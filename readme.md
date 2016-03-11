@@ -21,8 +21,11 @@ CLI color profiles (brainseller.itermcolors + brainseller.terminal)
 .bashrc and .bash_profile to initialize the dotfiles
 
 bash/bash_welcome for a nice welcoming grafic
+
      bash_aliases for all my aliases
+
      bash_functions for more complex "aliases"
+
      bash_settings for stuff like prompt customization
 
 osx/set_defaults.sh for setting up a new mac to my defaults
