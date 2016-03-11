@@ -13,20 +13,20 @@ http://code.tutsplus.com/tutorials/setting-up-a-mac-dev-machine-from-zero-to-her
 
 I also wrote a bit on it http://frankfuchs.net/articles/12/dotfiles-hooray
 
-## includes
+## content
 
 ![file tree](/img/tree.png)
 
-CLI color profiles (brainseller.itermcolors + brainseller.terminal)
+CLI color profiles (`brainseller.itermcolors` + `brainseller.terminal`)
 
-.bashrc and .bash_profile to initialize the dotfiles
+`.bashrc` and `.bash_profile` to initialize the dotfiles
 
-bash/bash_welcome for a nice welcoming grafic
+`bash/bash_welcome` for a nice welcoming grafic
 
-bash/bash_aliases for all my aliases
+`bash/bash_aliases` for all my aliases
 
-bash/bash_functions for more complex "aliases"
+`bash/bash_functions` for more complex "aliases"
 
-bash/bash_settings for stuff like prompt customization
+`bash/bash_settings` for stuff like prompt customization
 
-osx/set_defaults.sh for setting up a new mac to my defaults
+`osx/set_defaults.sh` for setting up a new mac to my defaults
