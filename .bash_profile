@@ -6,7 +6,7 @@
 INIT_DIR="${HOME}/.dotfiles/bash"
 
 # to make local configurations, add these files into this directory:
-# bash_extras | aliases, functions and settings, that should not be shared publically
+# bash_extras
 # bash_aliases
 # bash_settings
 # bash_welcome
@@ -27,10 +27,10 @@ fi
 
 # extras
 # extras are aliases, functions and settings, that should not be shared publically (read via github)
-# if [ -e "${INIT_DIR}/bash_extras" ]; then
-#   source "${INIT_DIR}/bash_extras"
-#   echo -e "   extras loaded ${green}✓${NC}"
-# fi
+if [ -e "${INIT_DIR}/bash_extras" ]; then
+  source "${INIT_DIR}/bash_extras"
+  echo -e "   extras loaded ${green}✓${NC}"
+fi
 # aliases
 if [ -e "${INIT_DIR}/bash_aliases" ]; then
   source "${INIT_DIR}/bash_aliases"
