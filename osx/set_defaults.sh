@@ -7,7 +7,7 @@
 #   and
 #   https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 #
-# Run ./set-defaults.sh and you'll be good to go.
+# Run ./set-defaults.sh and you'll be good to go
 
 
 #################################################

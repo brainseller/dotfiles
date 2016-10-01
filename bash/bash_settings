@@ -1,4 +1,4 @@
-# color definitions
+# some color definitions
 black='\033[0;30m'
 red='\033[0;31m'
 green='\033[0;32m'

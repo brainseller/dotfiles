@@ -4,7 +4,7 @@ alias cd..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-alias ~='cd ~' # `cd` is probably faster to type though
+alias ~='cd ~' # `cd` is probably faster to type though.
 
 # open text files with atom
 # alias atom='open -a Atom'

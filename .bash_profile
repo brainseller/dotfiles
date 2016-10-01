@@ -2,7 +2,7 @@
 # brainseller
 # 20150302
 
-# the directory where bash configuration files reside
+# the directory where bash configuration files reside.
 INIT_DIR="${HOME}/.dotfiles/bash"
 
 # to make local configurations, add these files into this directory:
