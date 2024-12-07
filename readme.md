@@ -20,6 +20,7 @@ I also wrote a bit on it http://frankfuchs.net/articles/12/dotfiles-hooray
 CLI color profiles (`brainseller.itermcolors` + `brainseller.terminal`)
 
 `.bashrc` and `.bash_profile` to initialize the dotfiles
+(it's `.zshrc` and `.zsh_profile` on ZSH)
 
 `bash/bash_welcome` for a nice welcoming grafic
 
