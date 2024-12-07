@@ -1,6 +1,6 @@
-# .bash_profile file, inspired by Oliver :)
+# .zsh_profile file, inspired by Oliver :)
 # brainseller
-# 20150302
+# 20241205
 
 # the directory where bash configuration files reside.
 INIT_DIR="${HOME}/.dotfiles/bash"
@@ -27,20 +27,20 @@ fi
 
 # extras
 # extras are aliases, functions and settings, that should not be shared publically (read via github)
-if [ -e "${INIT_DIR}/bash_extras" ]; then
-  source "${INIT_DIR}/bash_extras"
-  echo -e "   extras loaded ${green}✓${NC}"
-fi
+# if [ -e "${INIT_DIR}/bash_extras" ]; then
+#   source "${INIT_DIR}/bash_extras"
+#   echo -e "   extras loaded ${green}✓${NC}"
+# fi
 # aliases
 if [ -e "${INIT_DIR}/bash_aliases" ]; then
   source "${INIT_DIR}/bash_aliases"
   echo -e "   aliases loaded ${green}✓${NC}"
 fi
 # settings
-if [ -e "${INIT_DIR}/bash_settings" ]; then
-  source "${INIT_DIR}/bash_settings"
-  echo -e "   settings loaded ${green}✓${NC}"
-fi
+# if [ -e "${INIT_DIR}/bash_settings" ]; then
+#   source "${INIT_DIR}/bash_settings"
+#   echo -e "   settings loaded ${green}✓${NC}"
+# fi
 # functions
 if [ -e "${INIT_DIR}/bash_functions" ]; then
   source "${INIT_DIR}/bash_functions"
@@ -49,9 +49,9 @@ fi
 # git prompt
 # git prompt could be installed via 'brew install bash-git-prompt' unfortunately styling the prompt must be done in the cellar. See more in bash_settings
 # if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
-#     source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
-#     echo -e "   git-prompt loaded ${green}✓${NC}"
-# fi
+#    source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+#    echo -e "   git-prompt loaded ${green}✓${NC}"
+#fi
 
 echo
 echo "---------------------------------------------------------------"

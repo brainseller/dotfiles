@@ -15,17 +15,17 @@
 #################################################
 
 # Menu bar: hide the Time Machine, Volume, and User icons
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-	defaults write "${domain}" dontAutoLoad -array \
-		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
-		"/System/Library/CoreServices/Menu Extras/User.menu"
-done
-defaults write com.apple.systemuiserver menuExtras -array \
-	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
-    "/System/Library/CoreServices/Menu Extras/Clock.menu"
+# for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+# 	defaults write "${domain}" dontAutoLoad -array \
+# 		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+# 		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
+# 		"/System/Library/CoreServices/Menu Extras/User.menu"
+# done
+# defaults write com.apple.systemuiserver menuExtras -array \
+# 	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+# 	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+# 	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+#     "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 
 #################################################
@@ -33,22 +33,22 @@ defaults write com.apple.systemuiserver menuExtras -array \
 #################################################
 
 # set tap to click
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
 # set tap to click - even on login
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+# defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+# defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # enable draglock
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -int 1
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad DragLock -int 1
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -int 1
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad DragLock -int 1
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Set language and text formats
-defaults write NSGlobalDomain AppleLanguages -array "en" "de"
-defaults write NSGlobalDomain AppleLocale -string "en_DE@currency=EUR"
-defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
-defaults write NSGlobalDomain AppleMetricUnits -bool true
+# defaults write NSGlobalDomain AppleLanguages -array "en" "de"
+# defaults write NSGlobalDomain AppleLocale -string "en_DE@currency=EUR"
+# defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
+# defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 
 #################################################
@@ -72,7 +72,7 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 chflags nohidden ~/Library
 
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
-defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
+# defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Don’t automatically rearrange Spaces based on most recent use
 #defaults write com.apple.dock mru-spaces -bool false
@@ -83,7 +83,7 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 #defaults write com.apple.dock autohide-time-modifier -float 0
 
 # Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+# defaults write com.apple.dock autohide -bool true
 
 
 #################################################
@@ -94,7 +94,7 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
 # Hide Safari’s bookmarks bar by default
-defaults write com.apple.Safari ShowFavoritesBar -bool false
+# defaults write com.apple.Safari ShowFavoritesBar -bool false
 
 # Enable Safari’s debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true

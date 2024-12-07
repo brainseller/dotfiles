@@ -27,9 +27,9 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export PS1="${green}\w${NC}${boldBlack}  | \d : ${NC}\t ${boldBlack}|  \u @ \h${NC}\n${blue}\$${NC} ${boldBlack}>${NC} "
 
 # auto complete
-bind 'set show-all-if-ambiguous on'
-bind 'TAB:menu-complete'
-bind 'set completion-ignore-case On'
+# bind 'set show-all-if-ambiguous on'
+# bind 'TAB:menu-complete'
+# bind 'set completion-ignore-case On'
 
 # gitprompt configuration
 
